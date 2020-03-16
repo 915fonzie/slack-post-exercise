@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api//chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=&text=Hey%20I%20can%20post%20messages%21&channel=YOUR-CHANNEL-NAME
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '53'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 16 Mar 2020 01:38:03 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - 6a3693959de2b2e8d0da991c0f7bfa42
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Vary:
+      - Accept-Encoding
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot
+      X-Slack-Backend:
+      - h
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-a8o9
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 39688168a2a3353be1f3c9378d12d89f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C2
+      X-Amz-Cf-Id:
+      - gsoib3SU1iUk1jkmFLCKx1HgWCkOyPGzPEfxDx6Np6wRQ64EUdV1tw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":false,"error":"not_authed"}'
+    http_version: null
+  recorded_at: Mon, 16 Mar 2020 01:38:03 GMT
+- request:
+    method: post
+    uri: https://slack.com/api//chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=SLACK_TOKEN&text=Hey%20I%20can%20post%20messages%21&channel=YOUR-CHANNEL-NAME
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '60'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 16 Mar 2020 01:42:13 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - c1e3cee93c300522eb67e6a803858a67
+      X-Oauth-Scopes:
+      - identify,channels:read,users:read,chat:write
+      X-Accepted-Oauth-Scopes:
+      - chat:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      X-Slack-Backend:
+      - h
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-4d24
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 deaaf0548506de20925615eb51a7ea7f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - jP0JXW1HD20eK2dMvQJYECUztIAeYgdDuKunG4AewvOPp_RiZdmmbw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":false,"error":"channel_not_found"}'
+    http_version: null
+  recorded_at: Mon, 16 Mar 2020 01:42:13 GMT
+recorded_with: VCR 5.1.0
